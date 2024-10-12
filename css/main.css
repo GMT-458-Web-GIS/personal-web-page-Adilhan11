@@ -4146,16 +4146,16 @@ article.blog-single .blog-content {
     width: 100%;
     height: 800px;
     background-color: antiquewhite;
-    position: relative; /* Haritanın yerleşimini ayarlamak için relative */
+    position: relative; 
 }
 
 #map {
-    width: 60%; /* Haritanın genişliği */
-    height: 350px; /* Haritanın yüksekliği */
-    border: 2px solid darkred;
-    position: absolute; /* Absolute pozisyon kullanarak sabitliyoruz */
-    top: 350px; /* Yukarıdan 50px boşluk bırakıyoruz (bu değeri artırarak daha fazla aşağı çekebilirsiniz) */
-    right: 20px; /* Sağdan 20px boşluk bırakıyoruz */
+    width: 60%; 
+    height: 302px; 
+    border: 2px solid rgb(105, 22, 22);
+    position: absolute; 
+    top: 350px; 
+    right: 20px; 
  
 }
 
