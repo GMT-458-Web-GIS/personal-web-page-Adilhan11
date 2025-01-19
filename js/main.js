@@ -199,26 +199,34 @@
     };
 
 
-     * ------------------------------------------------------ */
+    /* Testimonials Slider
+    * ------------------------------------------------------ */
+    const ssTestimonials = function() {
         
-            arrows: true,
-            dots: false,
-            infinite: true,
-            slidesToShow: 2,
-            slidesToScroll: 1,
-            pauseOnFocus: false,
-            autoplaySpeed: 1500,
-            responsive: [
-                {
-                    breakpoint: 900,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+        const testimonials = document.querySelector('.testimonials');
+        
+        if (testimonials) {
+            const testimonialSlider = testimonials.querySelector('.testimonials__slider');
+            
+            $(testimonialSlider).slick({
+                arrows: true,
+                dots: false,
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                pauseOnFocus: false,
+                autoplaySpeed: 1500,
+                responsive: [
+                    {
+                        breakpoint: 900,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
                     }
-                }
-            ]
-        });
-
+                ]
+            });
+        }
     };
 
 
@@ -422,6 +430,7 @@
         ssAlertBoxes();
         ssContactForm();
         ssBackToTop();
+        ssTestimonials();
 
     })();
 
